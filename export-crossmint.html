@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exporter ma clé privée Crossmint</title>
+  <script src="https://unpkg.com/@crossmint/client-sdk/dist/index.global.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    #export-key {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exporter votre clé privée Crossmint</h2>
+  <p>Cliquez sur le bouton ci‑dessous pour récupérer votre clé privée et importer votre portefeuille dans MetaMask.</p>
+
+  <div id="export-key"></div>
+
+  <script>
+    Crossmint.exportPrivateKeyButton({
+      clientApiKey: "ck_production_5qFtfKxxRgXy5YH39z9EEdGetkNnAgria6QgDropW2xJSWhr8WPXk9h889EGY3XzWRPBXAssxRt9C8L1q4QCYNpDo6YmH1sij3QQcLB9qXwUaBxDJcqJRPcNDLLb5df6Fz7P9hW2Nqyh5W4QxewNRfPnPBnKcDjkeQxedrWFAvwPs9CB4kzEXNveXfs3BRaTRrayMNpShxWKXfTU5U3C9Yms",
+      environment: "production",
+      theme: "light",
+      text: "Exporter ma clé privée Crossmint"
+    }).render("#export-key");
+  </script>
+
+</body>
+</html>
